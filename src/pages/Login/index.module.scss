@@ -1,0 +1,58 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./change.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loginBox {
+        width: 550px;
+        padding: 50px;
+        color: #000;
+        background-color: #fff;
+        border-radius: 16px;
+
+        .title {
+            margin-bottom: 40px;
+            position: relative;
+        
+            ::before, ::after {
+                content: "";
+                width: 100px;
+                height: 2px;
+                position: absolute;
+                background: linear-gradient(to right, rgba(255, 255, 255, 0), #1976d2);
+                left: -20px;
+                top: 18px;
+            }
+        
+            ::after {
+                left: auto;
+                background: linear-gradient(to left, rgba(255, 255, 255, 0), #1976d2);
+                right: -20px;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 22px;
+                text-align: center;
+            }
+            
+            p {
+                text-align: center;
+                margin: 20px 0;
+            }
+        }
+
+        .captchaBox {
+            display: flex;
+
+            .captchaImg {
+                margin-left: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}

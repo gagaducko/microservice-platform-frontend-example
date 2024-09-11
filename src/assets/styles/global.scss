@@ -1,0 +1,64 @@
+body {
+    user-select: none;
+ }
+
+ img {
+    -webkit-user-drag: none;
+ }
+
+ .logo {
+    height: 64px;
+    padding: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .logo-img {
+    width: 36px;
+    height: 36px;
+    transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
+ }
+
+ .ant-layout-sider-collapsed .logo-img {
+   width: 24px;
+   height: 24px;
+}
+
+.logo-text {
+   font-size: 18px;
+   font-weight: bolder;
+   color: #0096FA;
+   margin-left: 8px;
+   transition: font-size 0.15s ease-in-out, margin-left 0.1s ease-in-out;
+}
+
+.ant-layout-sider-collapsed .logo-text {
+   margin-left: 0;
+   font-size: 0;
+}
+
+/* CSS样式覆盖 */
+//.ant-modal-content {
+//  background-color: #262626 !important; /* 暗黑背景色 */
+//  border-color: #434343 !important; /* 边框颜色，选择一个与背景稍微不同的颜色以保持一定的可见性 */
+//}
+//
+//.ant-modal-header {
+//  background-color: #262626 !important;
+//}
+//
+//.ant-modal-body {
+//  background-color: #262626 !important;
+//}
+//
+//.ant-modal-footer {
+//  background-color: #262626 !important;
+//}
+//
+//.ant-table {
+//  background-color: #262626 !important; /* 暗黑背景色 */
+//  border-color: #434343 !important; /* 边框颜色，选择一个与背景稍微不同的颜色以保持一定的可见性 */
+//  color: white !important;
+//}
